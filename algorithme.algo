@@ -1,0 +1,23 @@
+ALGORITHM check_1
+VAR
+    str : STRING := "hello world.";
+    i :INTEGER := 0;
+    c: CHAR :="";
+    vowels :INTEGER := 0;
+    word : INTEGER := 0;
+    char : INTEGER := 0;
+BEGIN
+   WHILE (c <> ".") DO
+    Read(c);
+    char := char +1;
+    IF (c = "a" OR c="e" OR c="i" OR c="o" OR c="u" OR c="y") THEN
+        vowels := vowels +1;
+    END_IF
+    IF ( c= " ") THEN
+    word := word + 1 ;
+    END_IF
+   END_WHILE
+   Write("the length of the sentence is",char+1)
+   Write("the number of the vowels is",vowels)
+   Write("the number of the worlds is",word+1)
+END
